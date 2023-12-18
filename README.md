@@ -10,8 +10,8 @@
 4. Run the following commands to configure your Git username and email using the following commands, replacing Emma's name with your own. These details will be associated with any commits that you create:
    
 ```bash
-$ git config --global user.name "Emma Paris"
-$ git config --global user.email "eparis@atlassian.com"
+$ git config --global user.name "Pi Innovations"
+$ git config --global user.email "sushantshah@pi-innovations.com.np"
 ```
 
 
@@ -21,6 +21,7 @@ $ git config --global user.email "eparis@atlassian.com"
 ```bash
 $ sudo apt-get update
 $ sudo apt-get install git
+
 OR
 
 $ sudo dnf install git
@@ -39,17 +40,22 @@ $ git config --global user.name "Emma Paris"
 $ git config --global user.email "eparis@atlassian.com"
 ```
 
-### Git for Mac Installer
+### Git for Mac
 
-The easiest way to install Git on a Mac is via the stand-alone installer:
+Install Git with Homebrew
 
-1. Download the latest Git for Mac installer.
+If you have installed Homebrew to manage packages on OS X, you can follow these instructions to install Git:
 
-2. Follow the prompts to install Git.
+1. Open your terminal and install Git using Homebrew:
+   
+```bash
+$ brew install git
+```
 
-3. Open a terminal and verify the installation was successful by typing `git --version` :
-   ```bash
-   $ git --version
-git version 2.9.2```
+2. Verify the installation was successful by typing which `git --version`:
+```bash
+$ git --version
+```
+
 
 
