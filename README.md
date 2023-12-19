@@ -93,6 +93,14 @@ While commiting the changes you need to also include the logical commit message 
 ```bash
 git commit -m 'commit message'
 ```
+
+Use the `git commit` command to create a commit. 
+This opens a text editor for you to write a commit message.
+
+```bash
+git commit
+```
+
 ### Unstaging the changes : git reset
 
 To unstage specific files, you can use the command `git reset`
@@ -112,3 +120,61 @@ To not only unstage but also discard the changes in your working directory you c
 git reset --hard
 ```
 
+### Viewing Project History
+
+To see a list of commits, you can use the `git log` command. This command displays information about each commit, including the commit hash, author, date, and commit message.
+
+```bash
+git log
+```
+To view a more condensed log,
+
+```bash
+git log --online
+```
+To see a list of branches and their last commit,
+
+```bash
+git branch -v
+```
+To view the changes introduced by a specific commit,
+
+```bash
+git show <commit-hash>
+```
+
+To see a list of remote branches,
+
+```bash
+git branch -r
+```
+
+To see the changes between two commits,
+
+```bash
+git diff <commit1 hash> <commit2 hash>
+```
+
+To see a reference log that shows the history of branch references,
+```bash
+git reflog
+```
+
+### Removing commit from the project history : git revert/git reset
+
+`git revert` command creates a new commit that undoes the changes introduced by a previous commit. This is a safer option, especially if the commit has been pushed to a shared repository because it does not alter the existing history.
+
+```bash
+git revert <commit-hash>
+```
+`git reset` command is more powerful but should be used with caution, especially if the commit has already been pushed to a shared repository. It allows you to move the branch pointer to a specific commit, effectively discarding all commits after that point.
+
+```bash
+git reset --hard <commit-hash> 
+```
+
+To move the branch pointer to a specific commit and add to staging the changes made in previous commit, you can use
+
+```bash
+git reset --soft <commit-hash> 
+```
