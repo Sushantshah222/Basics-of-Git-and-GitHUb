@@ -68,5 +68,47 @@ cd /path/to/your/existing/code
 git init
 ```
 
+### Checking Status of your repository : git status
 
+To check the status of your repository you will use the command `git status`.
+git status provide the status of any track and untrack files in your repository.
+
+```bash
+git status
+```
+
+### Staging the changes : git add
+
+To stage the changes, you will use the `git add` command.
+git add is a command you will use to track the changes so that you can commit in the next commit. git add allows git to keep track of the changes that you are making in the files. Here we can conclude that staging a changes is a way of keep track of changes by git that you desire and make in the files.
+
+```bash
+git add 'filename'
+```
+
+### Commiting Changes : git commit
+
+To commit the changes that you have staged using `git add` command, you will use `git commit` command.
+While commiting the changes you need to also include the logical commit message that provides clear insight of what changes that you committed in this very commit using flag `-m` as:
+```bash
+git commit -m 'commit message'
+```
+### Unstaging the changes : git reset
+
+To unstage specific files, you can use the command `git reset`
+
+```bash
+git reset <file1> <file2>
+```
+
+To unstage all changes, you can use `git reset` as
+
+```bash
+git reset
+```
+
+To not only unstage but also discard the changes in your working directory you can use `--hard` flag
+```bash
+git reset --hard
+```
 
