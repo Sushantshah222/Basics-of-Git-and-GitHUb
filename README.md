@@ -13,7 +13,14 @@
 $ git config --global user.name "Pi Innovations"
 $ git config --global user.email "sushantshah@pi-innovations.com.np"
 ```
+To check the configured username and user email in your Git configuration,
 
+```bash
+git config user.name
+```
+```bash
+git config user.email
+```
 
 ### Install Git on Linux
 
