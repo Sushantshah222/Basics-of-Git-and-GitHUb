@@ -178,3 +178,128 @@ To move the branch pointer to a specific commit and add to staging the changes m
 ```bash
 git reset --soft <commit-hash> 
 ```
+### Branching in Git
+
+To create a new branch, use the git branch
+```bash
+git branch <branch-name>
+```
+
+To switch to the newly created branch, 
+```bash
+git checkout <branch-name>
+```
+
+```bash
+git switch <branch-name>
+```
+
+A more concise way to create and switch to a new branch
+```bash
+git checkout -b <branch-name>
+```
+
+To see a list of existing branches and identify the current branch,
+```bash
+git branch
+``` 
+
+After making changes in a branch, you can merge those changes back into the main branch. First switch back to the branch you want to merge into then,
+
+```bash
+git merge <branch-name>
+```
+
+To delete a branch,
+```bash
+git branch -d <branch-name>
+```
+
+```bash
+git branch --delete <branch-name>
+```
+
+To rename the current branch,
+```bash
+git branch -m <new-branch-name>
+```
+
+### Pushing changes to remote repository
+
+Ensure remote repository is properly configured,
+```bash
+git remote -v
+```
+
+It's a good practice to pull changes from the remote repository before pushing to avoid conflicts,
+
+```bash
+git pull <remote-name> <branch-name>
+```
+
+Use the `git push` command to push your local changes to the remote repository,
+```bash
+git push <remote-name> <branch-name>
+```
+
+Using flag `-u` allows you to set up tracking, which means that your local branch is associated with a remote branch.It's often used the first time you push a branch to a remote repository, after the first time you can simply use command `git push`.
+
+```bash
+git push -u <remote-name> <branch-name> 
+```
+
+
+In some cases, you might need to force-push changes using flag `-f `  if the remote branch has diverged from your local branch. However, use force-push cautiously, especially on shared branches, as it rewrites the history.
+
+```bash
+git push -f <remote-name> <branch-name>
+```
+
+### Stashing Changes
+
+To stash your changes,
+
+```bash
+git stash save "stash message"
+```
+If you want to include untracked files in the stash,
+
+```bash
+git stash -u
+```
+
+To view the list of stashes,
+```bash
+git stash list
+```
+
+To apply the most recent stash and remove it from the stash list,
+```bash
+git stash apply
+```
+
+If you have multiple stashes and want to apply a specific one, you can specify the stash by its ID,
+
+```bash
+git stash apply stash@{}
+```
+
+To apply the most recent stash and remove it from the stash list in a single command,
+```bash
+git stash pop
+```
+
+If you want to create a temporary branch from a stash,
+```bash
+git stash branch <branch-name> 
+```
+
+To remove a stash without applying it,
+```bash
+git stash drop stash@{2}
+```
+
+To remove all stashes,
+```bash
+git stash clear
+```
