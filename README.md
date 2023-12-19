@@ -82,7 +82,66 @@ git config user.name
 git config user.email
 ```
 
-### Basic
+### Basic Unix based commands
+
+List Files and Directories
+
+```bash
+ls
+```
+
+Change Directory
+
+```bash
+cd <directory-path>
+```
+Create a Directory
+
+```bash
+mkdir <directory-name>
+```
+Create a File
+
+```bash
+touch <file-name>
+```
+
+Remove (Delete) a File
+
+```bash
+rm <file-name>
+```
+
+Remove (Delete) a Directory
+
+```bash
+rm -r <directory-name>
+```
+Copy File
+
+```bash
+cp <source-file> <destination-file>
+```
+
+Move/Rename File or Directory
+```bash
+mv <source> <destination>
+```
+Display File Content
+
+```bash
+cat <file-name>
+```
+Edit a File
+
+```bash
+nano <file-name>
+```
+Print Working Directory
+
+```bash
+pwd
+```
 
 ### Initializing a new repository: git init
 
