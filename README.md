@@ -57,6 +57,8 @@ $ brew install git
 $ git --version
 ```
 
+### Basic
+
 ### Initializing a new repository: git init
 
 To create a new repo, you'll use the `git init` command. 
@@ -130,7 +132,7 @@ git log
 To view a more condensed log,
 
 ```bash
-git log --online
+git log --oneline
 ```
 To see a list of branches and their last commit,
 
