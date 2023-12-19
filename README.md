@@ -47,6 +47,15 @@ $ git config --global user.name "Emma Paris"
 $ git config --global user.email "eparis@atlassian.com"
 ```
 
+To check the configured username and user email in your Git configuration,
+
+```bash
+git config user.name
+```
+```bash
+git config user.email
+```
+
 ### Git for Mac
 
 Install Git with Homebrew
@@ -62,6 +71,15 @@ $ brew install git
 2. Verify the installation was successful by typing which `git --version`:
 ```bash
 $ git --version
+```
+
+To check the configured username and user email in your Git configuration,
+
+```bash
+git config user.name
+```
+```bash
+git config user.email
 ```
 
 ### Basic
