@@ -201,9 +201,10 @@ To unstage all changes, you can use `git reset` as
 git reset
 ```
 
-To not only unstage but also discard the changes in your working directory you can use `--hard` flag
+To unstage and discard the changes in your working directory
+
 ```bash
-git reset --hard
+git restore <file-name>
 ```
 
 ### Viewing Project History
