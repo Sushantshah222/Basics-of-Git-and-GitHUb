@@ -204,7 +204,7 @@ git reset
 To unstage and discard the changes in your working directory
 
 ```bash
-git restore <file-name>
+git reset --hard
 ```
 
 ### Viewing Project History
