@@ -307,7 +307,6 @@ To remove a stash without applying it,
 ```bash
 git stash drop stash@{2}
 ```
-
 To remove all stashes,
 ```bash
 git stash clear
