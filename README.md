@@ -47,6 +47,15 @@ $ git config --global user.name "Emma Paris"
 $ git config --global user.email "eparis@atlassian.com"
 ```
 
+To check the configured username and user email in your Git configuration,
+
+```bash
+git config user.name
+```
+```bash
+git config user.email
+```
+
 ### Git for Mac
 
 Install Git with Homebrew
@@ -64,7 +73,75 @@ $ brew install git
 $ git --version
 ```
 
-### Basic
+To check the configured username and user email in your Git configuration,
+
+```bash
+git config user.name
+```
+```bash
+git config user.email
+```
+
+### Basic Unix based commands
+
+List Files and Directories
+
+```bash
+ls
+```
+
+Change Directory
+
+```bash
+cd <directory-path>
+```
+Create a Directory
+
+```bash
+mkdir <directory-name>
+```
+Create a File
+
+```bash
+touch <file-name>
+```
+
+Remove (Delete) a File
+
+```bash
+rm <file-name>
+```
+
+Remove (Delete) a Directory
+
+```bash
+rm -r <directory-name>
+```
+Copy File
+
+```bash
+cp <source-file> <destination-file>
+```
+
+Move/Rename File or Directory
+```bash
+mv <source> <destination>
+```
+Display File Content
+
+```bash
+cat <file-name>
+```
+Edit a File
+
+```bash
+nano <file-name>
+```
+Print Working Directory
+
+```bash
+pwd
+```
 
 ### Initializing a new repository: git init
 
@@ -124,7 +201,8 @@ To unstage all changes, you can use `git reset` as
 git reset
 ```
 
-To not only unstage but also discard the changes in your working directory you can use `--hard` flag
+To unstage and discard the changes in your working directory
+
 ```bash
 git reset --hard
 ```
